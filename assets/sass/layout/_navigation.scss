@@ -1,0 +1,78 @@
+.navbar {
+    align-items: center;
+    background-color: #FFF;
+    box-sizing: border-box;
+    color: #FFF;
+    display: grid;
+    /*grid-template-columns: 50px auto;
+    grid-template-rows: 50px;*/
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+  }
+  
+  .navbar__brand, .navbar__menu, .navbar__hamburger, .navbar__item {
+      align-items: center;
+      display: flex;
+      height: 100%; 
+  }
+  
+  .navbar__brand {
+      background-color: #0C0910;
+      font-size: 18px;
+      font-weight: 400;
+      justify-content: center;
+      width: 100%; 
+  }
+  
+  @media (min-width: 768px) {
+        .navbar__brand {
+          font-size: 20px; } 
+  }
+  
+  .navbar__menu {
+      justify-content: flex-end; 
+  }
+  
+  .navbar__hamburger {
+      color: #0C0910;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0 40px;
+      text-decoration: none; 
+  }
+  
+  .navbar__hamburger:hover {
+        background-color: #D1D1D1; 
+  }
+  
+  @media (min-width: 768px) {
+        .navbar__hamburger {
+          display: none; } 
+  }
+  
+  .navbar__item {
+      color: #0C0910;
+      cursor: pointer;
+      display: none;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0 40px;
+      text-decoration: none; 
+    }
+  
+  .navbar__item:hover {
+        background-color: #D1D1D1; }
+  
+  @media (min-width: 768px) {
+        .navbar__item {
+          display: flex; } }
+  
+  @media (min-width: 768px) {
+    .navbar {
+      grid-template-columns: 80px auto;
+      grid-template-rows: 80px; } }
+  
